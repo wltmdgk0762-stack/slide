@@ -1,0 +1,65 @@
+<html>
+ 	<head>
+		<style>
+			#div1{
+				height:30%;
+				background-color:lightgreen;
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				font-size:4em;
+				color:green;
+				border:2px solid darkgreen;
+			            }
+		            #div2{
+				height:60%;
+				background-color:darkgreen;
+				text-align:center;
+		                        }
+		            #div3{
+				height:16%;
+				background-color:lightgreen;
+				text-align:center;
+				font-size:2em;
+				color:green;
+				border:2px solid darkgreen;
+			}
+                  			#txt1{
+					font-size:3em;
+					background-color:pink;
+					color:white;	
+					text-align:center;
+			}
+	
+			           #sd1{
+				            width:80%;
+
+			}
+		</style>
+	            <script>
+			function slider( )
+			{
+				document.getElementById('txt1').value = document.getElementById('sd1').value;
+			}
+		</script>
+		
+			
+	</head>
+
+	<body>
+		<div id='div1'> 슬라이더 제어</div>
+		<div id='div2'>
+			<br><br><br>
+			<input type='text' id='txt1'>	
+			<br><br><br>
+			<br><br><br>
+			<br><br><br>
+			<input type='range' id='sd1' oninput='slider( );' min='0' max='1000000'>		
+
+		</div>
+		<div id='div3'>한국폴리텍대학 <br> 메카트로닉스과 <br> 지승하 </div>
+
+	</body>
+
+
+</html>
